@@ -1,0 +1,44 @@
+super + ctrl + r
+	pkill -USR1 -x sxhkd
+
+super + Return
+	alacritty -e sh -c "fastfetch; exec zsh"
+
+super + {d,x} 
+	rofi -show {run,drun}
+
+super + {b,m,t,p}
+	{firefox, spotify,Telegram,prismlauncher}
+
+super + shift + s
+	scrot -s /home/kydo/Pictures/%Y-%m-%d-%H%M%S.png
+
+super + c
+	bspc node -c
+
+super + alt + q
+	bspc quit
+
+super + space
+	bspc node -t "~"{floating,tiled}
+
+super + f
+  bspc node -t "~"{fullscreen,tiled}
+
+super + {_,shift + }{1-5}
+	bspc {desktop -f,node -d} '^{1-5}'
+
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+super + ctrl + space
+	bspc node -p cancel
+
+super + ctrl + {h,l,k,j}
+	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
+
+super + {_,alt +} {h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+super + shift + m
+	wpctl set-mute @DEFAULT_SINK@ toggle
