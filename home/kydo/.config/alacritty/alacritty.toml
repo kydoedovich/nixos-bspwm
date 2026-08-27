@@ -1,0 +1,90 @@
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[font]
+size = 11
+
+[font.offset]
+x = 0
+y = -2
+
+[scrolling]
+history = 5000
+
+[window]
+dynamic_padding = false
+opacity = 0.875
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 6
+y = 6
+
+[colors.primary]
+foreground = "#ffffff"
+background = "#000000"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
