@@ -1,0 +1,48 @@
+/home/kydo/.config/bspwm/lock-geometry.sh &
+
+
+xrandr --output eDP-1 --mode 1920x1200 --primary
+
+bspc monitor eDP-1 -d 1 2 3 4 5
+
+bspc config focus_follows_pointer true
+bspc config focused_border_color "#ffffff"
+bspc config normal_border_color "#ffffff"
+bspc config border_width 1
+bspc config borderless_monocle true
+
+bspc config active_border_color "#ffffff"
+bspc config presel_feedback_color "#ffffff"
+
+xsetroot -cursor_name left_ptr
+
+bspc config single_monocle true
+bspc config gapless_monocle false
+bspc config split_ratio 0.51
+bspc config window_gap 2
+
+bspc config pointer_follows_monitor true
+
+bspc config pointer_motion_interval 7
+bspc config pointer_follows_focus true
+bspc config pointer_modifier mod4
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
+
+bspc config automatic_scheme longest_side
+bspc config initial_polarity second_child
+bspc config removal_adjustment true
+
+bspc rule -a feh state=floating
+
+bspc rule -a firefox desktop='^2' follow=off focus=off
+bspc rule -a Spotify desktop='^5' follow=off focus=off
+bspc rule -a prismlauncher desktop='^3' follow=off focus=off
+bspc rule -a TelegramDesktop desktop='^4' state=floating locked=on private=on rectangle=550x1164+2+32
+bspc rule -a vesktop desktop='^4' state=floating locked=on private=on rectangle=1364x1164+554+32
+
+xinput set-prop "CX Wireless mouse -1k dongle Mouse" "libinput Accel Profile Enabled" 0, 1
+xinput set-prop "CX Wireless mouse -1k dongle Mouse" "libinput Accel Speed" 0
+
+feh --bg-scale /home/kydo/Pictures/1406005.jpg
