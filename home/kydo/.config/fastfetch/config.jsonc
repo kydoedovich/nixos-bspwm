@@ -1,0 +1,77 @@
+{
+  
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+    "key": {
+      "width": 10
+    },
+    "size": {
+      "binaryPrefix": "jedec"
+    },
+    "separator": ""
+  },
+  "logo": {
+    "type": "small",
+    "padding": {
+      "top": 1
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "os",
+      "key": "os",
+      "keyColor": "white",
+      "format": "{name}"
+    },
+    {
+      "type": "kernel",
+      "key": "ker",
+      "keyColor": "white",
+    },
+    {
+      "type": "packages",
+      "key": "pkgs",
+      "keyColor": "white",
+    },
+    {
+      "type": "shell",
+      "key": "sh",
+      "keyColor": "white",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "wm",
+      "key": "wm",
+      "keyColor": "white",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "uptime",
+      "key": "up",
+      "keyColor": "white",
+    },
+    {
+      "type": "cpu",
+      "key": "cpu",
+      "keyColor": "white",
+      "format": "{name}"
+    },
+    {
+      "type": "memory",
+      "key": "ram",
+      "keyColor": "white",
+      "format": "{used} / {total}"
+    },
+    {
+      "type": "disk",
+      "key": "disk",
+      "keyColor": "white",
+      "folders": [
+        "/"
+      ],
+      "format": "{size-used} / {size-total}"
+    }
+  ]
+}
+
