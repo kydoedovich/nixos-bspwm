@@ -1,1 +1,1 @@
-# nixos-bspwm
+#not working config nixos-bspwm
